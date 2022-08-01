@@ -9,10 +9,10 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo-img" href="#">
-      <img src="/source/img/header/logo-mobile.svg" alt="Кэт энерджи" width="34" height="38">
+      <img src="img/header/logo-mobile.svg" alt="Кэт энерджи" width="34" height="38">
     </a>
     <a class="main-header__logo-text" href="#">
-      <img src="/source/img/header/logo-text.svg" alt="Кэт энерджи" width="101" height="18">
+      <img src="img/header/logo-text.svg" alt="Кэт энерджи" width="101" height="18">
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">
@@ -20,13 +20,13 @@
       </button>
       <div class="main-navigation__container">
         <ul class="main-navigation__list">
-          <li class="navigation__list-item reset-list">
+          <li class="main-navigation__list-item reset-list">
             <a href="index.html">Главна</a>
           </li>
-          <li class="navigation__list-item reset-list">
+          <li class="main-navigation__list-item reset-list">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="navigation__list-item reset-list">
+          <li class="main-navigation__list-item reset-list">
             <a href="form.html">Подбор программы</a>
           </li>
         </ul>
@@ -103,40 +103,39 @@
             <ul class="comment__list reset-list">
               <li class="comment__item">
                 <label class="comment__label" for="comment"></label>
-                <input class="comment__input" type="text" placeholder="Расскажите обо всех повадках кота" name="comment"
-                  id="comment">
+                <textarea class="comment__input" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
               </li>
             </ul>
           </fieldset>
           <fieldset class="additional grid">
             <legend class="additional__title">Дополнительно</legend>
             <ul class="additional__list grid-list reset-list">
-              <li class="comment__item grid-item">
-                <label class="comment__label">
-                  <input class="comment__input" type="checkbox" name="sweetener" checked>
-                  <span class="comment-mark"></span>
-                  <span class="comment-text">Сахарозаменитель</span>
+              <li class="additional__item grid-item">
+                <label class="additional__label">
+                  <input class="additional__input" type="checkbox" name="sweetener" checked>
+                  <span class="additional-mark"></span>
+                  <span class="additional-text">Сахарозаменитель</span>
                 </label>
               </li>
-              <li class="comment__item grid-item">
-                <label class="comment__label">
-                  <input class="comment__input" type="checkbox" name="water">
-                  <span class="comment-mark"></span>
-                  <span class="comment-text">Питьевая вода</span>
+              <li class="additional__item grid-item">
+                <label class="additional__label">
+                  <input class="additional__input" type="checkbox" name="water">
+                  <span class="additional-mark"></span>
+                  <span class="additional-text">Питьевая вода</span>
                 </label>
               </li>
-              <li class="comment__item grid-item">
-                <label class="comment__label">
-                  <input class="comment__input" type="checkbox" name="milk">
-                  <span class="comment-mark"></span>
-                  <span class="comment-text">Молоко</span>
+              <li class="additional__item grid-item">
+                <label class="additional__label">
+                  <input class="additional__input" type="checkbox" name="milk">
+                  <span class="additional-mark"></span>
+                  <span class="additional-text">Молоко</span>
                 </label>
               </li>
-              <li class="comment__item grid-item">
-                <label class="comment__label">
-                  <input class="comment__input" type="checkbox" name="vitamins">
-                  <span class="comment-mark"></span>
-                  <span class="comment-text">Витамины</span>
+              <li class="additional__item grid-item">
+                <label class="additional__label">
+                  <input class="additional__input" type="checkbox" name="vitamins">
+                  <span class="additional-mark"></span>
+                  <span class="additional-text">Витамины</span>
                 </label>
               </li>
             </ul>
@@ -150,20 +149,21 @@
     <section class="contacts contacts--grey">
       <h2 class="contacts__title">Приглашаем к сотрудничеству диллеров!</h2>
       <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <a class="contacts__map map" href="../source/img/contacts/location.jpg">
-        <img src="../source/img/contacts/location.jpg" alt="карта">
+      <a class="contacts__map map" href="img/contacts/location.jpg">
+        <img src="img/contacts/location.jpg" alt="карта">
       </a>
     </section>
 
   </main>
 
   <footer class="footer-container">
-    <h2 class="footer__title">
-      <a class="footer__logo-text" href="#">
-        <img src="/source/img/header/logo-text.svg" alt="Кэт энерджи" width="128" height="24">
+    <h2 class="footer-container__title">
+      <a class="footer-container__logo-text" href="#">
+        <img src="img/header/logo-text.svg" alt="Кэт энерджи" width="128" height="24">
       </a>
     </h2>
     <section class="socials">
+      <h3 class="visually-hidden">Социальные сети</h3>
       <div class="socials__container">
         <a class="" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">VK</span>
@@ -182,9 +182,6 @@
       </div>
     </section>
   </footer>
-
-  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
-      href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
 
 </body>
 
