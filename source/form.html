@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo-img" href="#">
+      <img src="img/header/logo-mobile.svg" alt="Кэт энерджи" width="34" height="38">
+    </a>
+    <a class="main-header__logo-text" href="#">
+      <img src="img/header/logo-text.svg" alt="Кэт энерджи" width="101" height="18">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-navigation__container">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__list-item reset-list">
+            <a href="index.html">Главна</a>
+          </li>
+          <li class="main-navigation__list-item reset-list">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-navigation__list-item reset-list">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <h1 class="visually-hidden">Форма</h1>
+
+    <section class="form-data">
+      <div class="form-data__container">
+        <h2 class="form-data__title">Подбор программы</h2>
+        <p class="form-data__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="form-data__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="pet-data">
+            <legend class="visually-hidden">Информация питомца</legend>
+            <ul class="pet-data__list reset-list">
+              <li class="pet-data__item">
+                <label class="pet-data__label pet-data__label--required" for="name">имя:</label>
+                <input class="pet-data__input" type="text" placeholder="Барсик" name="name" id="name">
+              </li>
+              <li class="pet-data__item">
+                <label class="pet-data__label pet-data__label--required" for="weight">вес (кг):</label>
+                <input class="pet-data__input" type="number" placeholder="7" name="weight" id="weight">
+              </li>
+              <li class="pet-data__item">
+                <label class="pet-data__label" for="age">возраст (лет):</label>
+                <input class="pet-data__input" type="number" placeholder="7" name="age" id="age">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="service">
+            <legend class="visually-hidden">Вид программы</legend>
+            <ul class="service__list reset-list">
+              <li class="service__item">
+                <label class="service__label">
+                  <input class="service__input visually-hidden" type="radio" value="lose" name="service" checked>
+                  <span class="service-mark"></span>
+                  <span class="service-label">Похудение</span>
+                </label>
+              </li>
+              <li class="service__item">
+                <label class="service__label">
+                  <input class="service__input visually-hidden" type="radio" value="gain" name="service">
+                  <span class="service-mark"></span>
+                  <span class="service-label">Набор массы</span>
+                </label>
+              </li>
+              <li class="service__item">
+                <label class="service__label">
+                  <input class="service__input visually-hidden" type="radio" value="unknown" name="service">
+                  <span class="service-mark"></span>
+                  <span class="service-label">Не знаю (нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="owner-data">
+            <legend class="owner-data__title">Контактные данные (владельца кота)</legend>
+            <ul class="owner-data__list reset-list">
+              <li class="owner-data__item">
+                <label class="owner-data__label owner-data__label--required label-letter" for="mail">E-mail:</label>
+                <input class="owner-data__input" type="email" placeholder="kuklachev@gmail.com" name="mail" id="mail">
+              </li>
+              <li class="owner-data__item">
+                <label class="owner-data__label owner-data__label--required label-phone" for="phone">Телефон:</label>
+                <input class="owner-data__input" type="tel" placeholder="8 (960) 900-60-90" name="phone" id="phone">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="comment">
+            <legend class="comment__title">Комментарий</legend>
+            <ul class="comment__list reset-list">
+              <li class="comment__item">
+                <label class="comment__label" for="comment"></label>
+                <textarea class="comment__input" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="additional grid">
+            <legend class="additional__title">Дополнительно</legend>
+            <ul class="additional__list grid-list reset-list">
+              <li class="additional__item grid-item">
+                <label class="additional__label">
+                  <input class="additional__input" type="checkbox" name="sweetener" checked>
+                  <span class="additional-mark"></span>
+                  <span class="additional-text">Сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="additional__item grid-item">
+                <label class="additional__label">
+                  <input class="additional__input" type="checkbox" name="water">
+                  <span class="additional-mark"></span>
+                  <span class="additional-text">Питьевая вода</span>
+                </label>
+              </li>
+              <li class="additional__item grid-item">
+                <label class="additional__label">
+                  <input class="additional__input" type="checkbox" name="milk">
+                  <span class="additional-mark"></span>
+                  <span class="additional-text">Молоко</span>
+                </label>
+              </li>
+              <li class="additional__item grid-item">
+                <label class="additional__label">
+                  <input class="additional__input" type="checkbox" name="vitamins">
+                  <span class="additional-mark"></span>
+                  <span class="additional-text">Витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="form-data__button button" type="submit">Отправить заявку</button>
+          <p class="form-data__about">* __ Обязательные поля</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="contacts contacts--grey">
+      <h2 class="contacts__title">Приглашаем к сотрудничеству диллеров!</h2>
+      <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <a class="contacts__map map" href="img/contacts/location.jpg">
+        <img src="img/contacts/location.jpg" alt="карта">
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="footer-container">
+    <h2 class="footer-container__title">
+      <a class="footer-container__logo-text" href="#">
+        <img src="img/header/logo-text.svg" alt="Кэт энерджи" width="128" height="24">
+      </a>
+    </h2>
+    <section class="socials">
+      <h3 class="visually-hidden">Социальные сети</h3>
+      <div class="socials__container">
+        <a class="" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">VK</span>
+        </a>
+        <a class="" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+        <a class="" href="tg://resolve?domain=htmlacademy">
+          <span class="visually-hidden">Telegram</span>
+        </a>
+      </div>
+      <div class="academy">
+        <a class="academy__link" href="https://htmlacademy.ru">
+          <span class="academy__link-text">HTML Academy</span>
+        </a>
+      </div>
+    </section>
+  </footer>
+
+</body>
+
+</html>
