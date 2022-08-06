@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo-img" href="#">
+    <a class="main-header__logo-img" href="index.html">
       <img src="img/header/logo-mobile.svg" alt="Кэт энерджи" width="34" height="38">
     </a>
-    <a class="main-header__logo-text" href="#">
+    <a class="main-header__logo-text" href="index.html">
       <img src="img/header/logo-text.svg" alt="Кэт энерджи" width="101" height="18">
     </a>
     <nav class="main-navigation">
@@ -64,21 +65,21 @@
             <ul class="service-data__list reset-list">
               <li class="service-data__item">
                 <label class="service-data__label">
-                  <input class="service-data__input visually-hidden" type="radio" value="lose" name="service" checked>
+                  <input class="service-data__input" type="radio" value="lose" name="service" checked>
                   <span class="service-data-mark"></span>
                   <span class="service-data-label">Похудение</span>
                 </label>
               </li>
               <li class="service-data__item">
                 <label class="service-data__label">
-                  <input class="service-data__input visually-hidden" type="radio" value="gain" name="service">
+                  <input class="service-data__input" type="radio" value="gain" name="service">
                   <span class="service-data-mark"></span>
                   <span class="service-data-label">Набор массы</span>
                 </label>
               </li>
               <li class="service-data__item">
                 <label class="service-data__label">
-                  <input class="service-data__input visually-hidden" type="radio" value="unknown" name="service">
+                  <input class="service-data__input" type="radio" value="unknown" name="service">
                   <span class="service-data-mark"></span>
                   <span class="service-data-label">Не знаю (нужен ваш совет)</span>
                 </label>
@@ -140,38 +141,40 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form-data__button button" type="submit">Отправить заявку</button>
+          <button class="form-data__button green-button" type="submit">Отправить заявку</button>
           <p class="form-data__about">* __ Обязательные поля</p>
         </form>
       </div>
     </section>
 
-    <section class="contacts contacts--grey">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству диллеров!</h2>
-      <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <a class="contacts__map map" href="img/contacts/location.jpg">
-        <img src="img/contacts/location.jpg" alt="карта">
-      </a>
+    <section class="contacts background-gray">
+      <div class="contacts__container">
+        <h2 class="contacts__title">Приглашаем<br>к сотрудничеству<br>диллеров!</h2>
+        <p class="contacts__text">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <a class="contacts__map map" href="img/contacts/location.jpg">
+          <img src="img/contacts/location.jpg" alt="карта">
+        </a>
+      </div>
     </section>
 
   </main>
 
   <footer class="footer-container">
     <h2 class="footer-container__title">
-      <a class="footer-container__logo-text" href="#">
+      <a class="footer-container__logo-text" href="index.html">
         <img src="img/header/logo-text.svg" alt="Кэт энерджи" width="128" height="24">
       </a>
     </h2>
     <section class="socials">
       <h3 class="visually-hidden">Социальные сети</h3>
       <div class="socials__container">
-        <a class="" href="https://vk.com/htmlacademy">
+        <a class="social__website social__website--VK" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">VK</span>
         </a>
-        <a class="" href="https://www.youtube.com/user/htmlacademyru">
+        <a class="social__website social__website--youtube" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">Youtube</span>
         </a>
-        <a class="" href="tg://resolve?domain=htmlacademy">
+        <a class="social__website social__website--telegram" href="tg://resolve?domain=htmlacademy">
           <span class="visually-hidden">Telegram</span>
         </a>
       </div>
