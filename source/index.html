@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -18,16 +19,16 @@
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-navigation__container">
-        <ul class="main-navigation__list">
-          <li class="main-navigation__list-item reset-list">
-            <a href="index.html">Главна</a>
+      <div class="main-navigation__container hide-popover">
+        <ul class="main-navigation__list reset-list">
+          <li class="main-navigation__list-item">
+            <a class="main-navigation__link" href="index.html">Главна</a>
           </li>
-          <li class="main-navigation__list-item reset-list">
-            <a href="catalog.html">Каталог продукции</a>
+          <li class="main-navigation__list-item">
+            <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-navigation__list-item reset-list">
-            <a href="form.html">Подбор программы</a>
+          <li class="main-navigation__list-item">
+            <a class="main-navigation__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -42,7 +43,7 @@
         <h2 class="landing__title">Функциональное питание для котов</h2>
         <p class="landing__description">Занялся собой? Займись котом!</p>
         <img src="img/landing/landing-content-image.png" alt="упаковка корма" width="280" height="270">
-        <button class="landing__button button" type="button">Подобрать программу</button>
+        <button class="landing__button green-button" type="button">Подобрать программу</button>
       </div>
     </section>
 
@@ -109,7 +110,7 @@
             <dd class="statistics__item-description">затрачено времени</dd>
           </div>
         </dl>
-        <p>Затраты на питание: 15 000 руб.</p>
+        <p class="statistics_sum-text">Затраты на питание: 15 000 руб.</p>
         <form class="statistics__form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="statistics__group">
             <legend class="visually-hidden">Изменения котика</legend>
@@ -128,12 +129,12 @@
               <p class="statistics__inputs-future">стало</p>
             </div>
             <div>
-              <img class="statistics__cat-fat" src="img/statistics/cat-fat.png" alt="толстый кот"
-                width="280" height="232">
+              <img class="statistics__cat-fat" src="img/statistics/cat-fat.png" alt="толстый кот" width="280"
+                height="232">
             </div>
             <div>
-              <img class="statistics__cat-skinny" src="img/statistics/cat-skinny.png" alt="худой кот"
-                width="280" height="232">
+              <img class="statistics__cat-skinny" src="img/statistics/cat-skinny.png" alt="худой кот" width="280"
+                height="232">
             </div>
           </fieldset>
         </form>
@@ -141,11 +142,13 @@
     </section>
 
     <section class="contacts">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству диллеров!</h2>
-      <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <a class="contacts__map map" href="img/contacts/location.jpg">
-        <img src="img/contacts/location.jpg" alt="карта">
-      </a>
+      <div class="contacts__container">
+        <h2 class="contacts__title">Приглашаем<br>к сотрудничеству<br>диллеров!</h2>
+        <p class="contacts__text">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <a class="contacts__map map" href="img/contacts/location.jpg">
+          <img src="img/contacts/location.jpg" alt="карта">
+        </a>
+      </div>
     </section>
 
   </main>
@@ -159,13 +162,13 @@
     <section class="socials">
       <h3 class="visually-hidden">Социальные сети</h3>
       <div class="socials__container">
-        <a class="" href="https://vk.com/htmlacademy">
+        <a class="social__website social__website--VK" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">VK</span>
         </a>
-        <a class="" href="https://www.youtube.com/user/htmlacademyru">
+        <a class="social__website social__website--youtube" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">Youtube</span>
         </a>
-        <a class="" href="tg://resolve?domain=htmlacademy">
+        <a class="social__website social__website--telegram" href="tg://resolve?domain=htmlacademy">
           <span class="visually-hidden">Telegram</span>
         </a>
       </div>
