@@ -1,36 +1,27 @@
 .socials {
-  width: 280px;
+  max-width: 320px;
 }
 
 .socials__container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 132px;
-  margin-bottom: 43px;
-}
-
-.social__website {
-  background-repeat: no-repeat;
+  max-width: 280px;
 }
 
 .social__website:not(:last-child) {
   margin-right: 24px;
 }
 
-.social__website--VK {
-  background-image: url("../img/socials/vkontakte.svg");
-  width: 28px;
-  height: 22px;
+@media (min-width: @tablet-width) {
+  .socials {
+    min-width: 132px;
+  }
+
+  .socials__container {
+    margin-bottom: 0;
+  }
 }
 
-.social__website--youtube {
-  background-image: url("../img/socials/youtube.svg");
-  width: 28px;
-  height: 22px;
-}
-
-.social__website--telegram {
-  background-image: url("../img/socials/telegram.svg");
-  width: 28px;
-  height: 22px;
+@media (min-width: @desktop-width) {
+  .socials {
+    min-width: 132px;
+  }
 }

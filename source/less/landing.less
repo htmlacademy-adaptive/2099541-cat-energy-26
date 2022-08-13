@@ -1,12 +1,17 @@
 .landing {
-  background-image: url("../img/landing//landing-background-image-modifired.png");
-  background-repeat: no-repeat;
-  margin: 0 auto;
+  width: 320px;
+  position: relative;
+  height: 480px;
+}
+
+.landing::before {
+  content: url("../img/landing/landing-background-image-modifired.png");
+  position: absolute;
+  z-index: -1;
 }
 
 .landing__container {
-  width: 280px;
-  justify-content: center;
+  max-width: 280px;
 }
 
 .landing__title {
@@ -33,4 +38,75 @@
 .landing__link {
   padding: 8px 44px;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .landing {
+    background-image: none;
+    width: 768px;
+    height: 872px;
+  }
+
+  .landing::before {
+    content: "";
+  }
+
+  .landing__container {
+    max-width: 708px;
+  }
+
+  .landing__title {
+    font-family: "oswald", sans-serif, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: var(--color-basic-black);
+    text-align: left;
+    min-width: 414px;
+  }
+
+  .landing__description {
+    font-family: "oswald", sans-serif, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--color-basic-black);
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .landing__link {
+    padding: 14px 26px;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .landing {
+    width: 1440px;
+    position: relative;
+    height: 551px;
+  }
+
+  .landing::before {
+    content: url("../img/landing/desktop/Group 17.png");
+    position: absolute;
+    width: 720px;
+    height: 694px;
+    top: -165px;
+    left: 610px;
+    z-index: -1;
+  }
+
+  .landing__container {
+    max-width: 1220px;
+  }
+
+  .landing__image {
+    position: absolute;
+    top: -40px;
+    left: 450px;
+  }
 }
