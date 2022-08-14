@@ -1,5 +1,9 @@
+.form-data {
+  width: 320px;
+}
+
 .form-data__container {
-  width: 280px;
+  max-width: 280px;
   margin-bottom: 29px;
 }
 
@@ -18,4 +22,48 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .form-data {
+    width: 768px;
+  }
+
+  .form-data__container {
+    max-width: 630px;
+  }
+
+  .form-data__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form-data__description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-data__wrapper {
+    display: flex;
+  }
+
+  .green-button {
+    width: 282px;
+    height: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-data {
+    width: 1440px;
+  }
+
+  .form-data__container {
+    max-width: 1220px;
+  }
+
+  .green-button {
+    width: 568px;
+    height: 52px;
+  }
 }

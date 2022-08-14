@@ -1,4 +1,5 @@
 .additional {
+  padding: 0;
   border: none;
 }
 
@@ -18,3 +19,32 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .additional__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additional__list {
+    display: grid;
+    grid-template-columns: 221px 221px;
+  }
+
+  .additional-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .additional__item:not(:last-child) {
+    margin-right: 105px;
+  }
+}
+

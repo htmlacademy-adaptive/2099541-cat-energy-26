@@ -1,4 +1,5 @@
 .owner-data {
+  padding: 0;
   border: none;
 }
 
@@ -36,4 +37,30 @@
 
 .owner-data__label-phone::after {
   content: url("../img/owner-data/phone.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .owner-data-mail {
+    width: 551px;
+  }
+
+  .owner-data-phone {
+    width: 535px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .owner-data__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .owner-data-mail {
+    width: 486px;
+  }
+
+  .owner-data-phone {
+    width: 472px;
+  }
 }
