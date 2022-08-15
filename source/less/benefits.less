@@ -1,5 +1,9 @@
+.benefits {
+  width: 320px;
+}
+
 .benefits__container {
-  width: 280px;
+  max-width: 280px;
 }
 
 .benefits__title {
@@ -16,23 +20,113 @@
 }
 
 .benefits__item--ingredients::before {
-  content: url("../img/benefits/ingredients.svg");
+  content: url("../img/benefits/mobile/ingredients-mobile.svg");
 }
 
 .benefits__item--condition::before {
-  content: url("../img/benefits/condition.svg");
+  content: url("../img/benefits/mobile/condition-mobile.svg");
 }
 
 .benefits__item--periodicity::before {
-  content: url("../img/benefits/periodicity.svg");
+  content: url("../img/benefits/mobile/periodicity-mobile.svg");
 }
 
 .benefits__item--duration::before {
-  content: url("../img/benefits/duration.svg");
+  content: url("../img/benefits/mobile/duration-mobile.svg");
 }
 
 .benefits__description {
   font-size: 14px;
   line-height: 18px;
   color: var(--color-special_dark-grey);
+}
+
+@media (min-width: @tablet-width) {
+  .benefits {
+    width: 768px;
+    height: 781px;
+  }
+
+  .benefits__container {
+    max-width: 708px;
+  }
+
+  .benefits__title {
+    font-family: "oswald", sans-serif, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .benefits__list {
+    display: grid;
+    grid-template-columns: repeat(2, 246px);
+    gap: 150px 154px;
+    counter-reset: section;
+  }
+
+  .benefits__item {
+    position: relative;
+  }
+
+  .benefits__item--ingredients::before {
+    content: url("../img/benefits/tablet/ingredients-tablet.svg");
+  }
+
+  .benefits__item--condition::before {
+    content: url("../img/benefits/tablet/condition-tablet.svg");
+  }
+
+  .benefits__item--periodicity::before {
+    content: url("../img/benefits/tablet/periodicity-tablet.svg");
+  }
+
+  .benefits__item--duration::before {
+    content: url("../img/benefits/tablet/duration-tablet.svg");
+  }
+
+  .benefits__item--serial-number::after {
+    position: absolute;
+    top: -40px;
+    left: 100px;
+    counter-increment: section;
+    content: "" counter(section);
+    font-family: "oswald", sans-serif, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: var(--color-basic_grey);
+    z-index: -1;
+  }
+
+  .benefits__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-special_dark-grey);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .benefits {
+    width: 1440px;
+    height: 512px;
+  }
+
+  .benefits__container {
+    max-width: 1220px;
+  }
+
+  .benefits__list {
+    display: flex;
+    gap: 80px;
+  }
+
+  .benefits__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-special_dark-grey);
+    min-width: 250px;
+  }
 }

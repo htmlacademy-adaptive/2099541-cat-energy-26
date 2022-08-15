@@ -1,6 +1,6 @@
 .service-data {
   border: none;
-  margin-bottom: 24px;
+  padding: 0;
 }
 
 .service-data-label {
@@ -11,4 +11,27 @@
   line-height: 18px;
   text-transform: uppercase;
   color: var(--color-special_dark-grey-2);
+}
+
+@media (min-width: @tablet-width) {
+  .service-data {
+    border: 1px solid var(--color-special_grey-5);
+    height: 196px;
+  }
+
+  .service-data-label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .service-data {
+    position: absolute;
+    left: 700px;
+    top: 290px;
+    width: 570px;
+    height: 196px;
+    border: 1px solid var(--color-special_grey-5);
+  }
 }

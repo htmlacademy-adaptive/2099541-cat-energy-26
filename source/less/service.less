@@ -1,6 +1,13 @@
+.service {
+  width: 320px;
+}
+
+.service__container {
+  width: 280px;
+}
+
 .service__item {
   background-color: var(--color-basic_grey);
-  width: 280px;
   height: 266px;
 }
 
@@ -9,11 +16,11 @@
 }
 
 .service__item--slim::before {
-  content: url("../img/service/cat_slim.svg");
+  content: url("../img/service/mobile/cat_slim-mobile.svg");
 }
 
 .service__item--pro::before {
-  content: url("../img/service/cat_pro.svg");
+  content: url("../img/service/mobile/cat_pro-mobile.svg");
 }
 
 .service__title {
@@ -39,4 +46,102 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-basic-black);
+}
+
+@media (min-width: @tablet-width) {
+  .service {
+    width: 768px;
+  }
+
+  .service__container {
+    width: 708px;
+  }
+
+  .service__item {
+    position: relative;
+    height: 372px;
+  }
+
+  .service__item--slim::before {
+    content: url("../img/service/tablet/cat_slim-tablet.svg");
+    position: absolute;
+    top: 81px;
+    left: 446px;
+  }
+
+  .service__item--pro::before {
+    content: url("../img/service/tablet/cat_pro-tablet.svg");
+    position: absolute;
+    top: 91px;
+    left: 412px;
+  }
+
+  .service__title {
+    font-family: "oswald", sans-serif, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .service__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+  }
+
+  .service__link {
+    font-family: "oswald", sans-serif, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-basic-black);
+  }
+
+  .service__link::after {
+    content: url("../img/service/tablet/icon_arrow.svg");
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .service {
+    width: 1440px;
+  }
+
+  .service__container {
+    width: 1220px;
+  }
+
+  .service__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .service__item {
+    width: 570px;
+    height: 374px;
+  }
+
+  .service__item:not(:last-child) {
+    margin-right: 80px;
+  }
+
+  .service__item--slim::before {
+    content: url("../img/service/desktop/cat_slim-desktop.svg");
+    position: absolute;
+    top: 81px;
+    left: 446px;
+  }
+
+  .service__item--pro::before {
+    content: url("../img/service/desktop/cat_pro-desktop.svg");
+    position: absolute;
+    top: 91px;
+    left: 412px;
+  }
 }

@@ -1,3 +1,7 @@
+.academy {
+  width: 320px;
+}
+
 .academy__link {
   font-size: 16px;
   line-height: 18px;
@@ -5,6 +9,14 @@
   text-decoration: none;
 }
 
-.academy__link::after {
-  content: url("../img/socials/logo-footer.svg");
+@media (min-width: @tablet-width) {
+  .academy {
+    max-width: 163px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .academy {
+    max-width: 163px;
+  }
 }
